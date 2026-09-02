@@ -1,0 +1,20 @@
+Bootstrap: docker
+From: nvcr.io/nim/nvidia/molmim:1.0.0
+
+%post
+    # Update pip
+    pip install --upgrade pip
+
+    # Install required Python packages
+    pip install loguru scikit-learn bionemo py3Dmol biopython rdkit
+
+
+%runscript
+    python "$@"
+
+%labels
+    Version v1.0.0
+
+%help
+    This container is based on NVIDIA MolMIM https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/molmim/tags
+
