@@ -10,10 +10,10 @@ if [[ -n "$NGC_API_KEY" ]]; then
       echo "API key is valid"
     elif [ "$RET_CODE" -eq 401 ]; then
       echo "API key is invalid or expired"
-      echo "delete ~/.ngc/ngc_api_key.molmim and try again"
+      echo "delete ~/.ngc/ngc_api_key.molmim and run check_molmim_api_key.sh"
     else
       echo "Unexpected response code: $RET_CODE"
-      echo "delete ~/.ngc/ngc_api_key.molmim and try again"
+      echo "delete ~/.ngc/ngc_api_key.molmim and run check_molmim_api_key.sh"
   fi
 else
     echo "NGC API Key for molmim not found.  Create one at:"
@@ -22,5 +22,5 @@ else
     read -r NGC_API_KEY
     mkdir -p ~/.ngc/
     echo $NGC_API_KEY > ~/.ngc/ngc_api_key.molmim
-    echo "Key saved.  Rereun script to check"
+    echo "Key saved.  Rereun check_molmim_api_key.sh to confirm"
 fi
