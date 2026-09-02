@@ -8,7 +8,6 @@ From: nvcr.io/nim/nvidia/molmim:1.0.0
     # Install required Python packages
     pip install loguru scikit-learn bionemo py3Dmol biopython rdkit
 
-
 %runscript
     python "$@"
 
