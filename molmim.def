@@ -16,4 +16,3 @@ From: nvcr.io/nim/nvidia/molmim:1.0.0
 
 %help
     This container is based on NVIDIA MolMIM https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/molmim/tags
-
