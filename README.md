@@ -20,5 +20,5 @@ Suggested usage:
     - GPU: L4
 3. When Open Ondemand starts, select the file 'molmim.ipynb' from the chooser
 4. Modify file to run your workflow
-5. If you need to run for longer, or a GPU is not available, save changes in molmum.ipynb, open a terminal kernel in Open Ondemand, and type:
+5. If you need to run for longer, or a GPU is not available, save changes in molmim.ipynb, open a terminal kernel in Open Ondemand, and type:
 6. sbatch run_molmim.sl
