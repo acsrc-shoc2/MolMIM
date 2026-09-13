@@ -14,4 +14,4 @@ module load JupyterLab/2026.7.0-foss-2026-4.6.0
 #Exit if no key
 ./check_molmim_api_key.sh
 
-papermill molmim.ipynb output.ipynb -p API_KEY $(cat ~/.ngc/ngc_api_key.molmim)
+papermill molmim.ipynb output_molmum.ipynb -p API_KEY $(cat ~/.ngc/ngc_api_key.molmim)
